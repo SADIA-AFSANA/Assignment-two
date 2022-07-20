@@ -74,6 +74,7 @@ body {
 
 .layout {
     width: 150px;
+    height: 150px;
     font-size: 16px;
     background: #161616;
     border-radius: 10px;
