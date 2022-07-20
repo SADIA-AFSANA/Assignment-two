@@ -198,11 +198,12 @@ h1 {
 /* media Quaries */
 /* -------- */
 /* tablet divice */
-@media screen and (min-width: 689px) and(max-width: 992px) {
-    .main {
+@media screen and (min-width: 577px) and(max-width: 768px) {
 
-        background-color: plum;
+    .container {
+        display: grid;
 
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .layout {
@@ -216,24 +217,20 @@ h1 {
         background-color: white;
         flex-direction: row;
         display: inline;
-
     }
 
-    .container {
-        margin-top: 0px;
-
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .display {
-        display: flex;
+    .main {
+        margin-left: 0;
+        background-color: cornflowerblue;
+        width: 760px;
+        flex-direction: column;
     }
 }
 
 /* mobile devices */
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 576px) {
     body {
-        width: 680px;
+        width: 570px;
     }
 
     .layout {
@@ -256,8 +253,13 @@ h1 {
         flex-direction: column;
     }
 
+    .blog {
+        margin-right: 400px;
+        border-radius: 10px;
+    }
+
     .title {
-        width: 100%;
+        /* width: 100%; */
 
     }
 
