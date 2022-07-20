@@ -164,6 +164,7 @@ span {
 }
 
 .display {
+
     display: none;
 }
 
@@ -198,71 +199,91 @@ h1 {
 /* media Quaries */
 /* -------- */
 /* tablet divice */
-
-
-/* mobile devices */
-@media only screen and (max-width: 576px) {
-    body {
-        width: 570px;
-    }
-
-    .layout {
-
-        background-color: white;
-        flex-direction: row;
-        display: inline;
-    }
-
-    .all-blog {
-        background-color: white;
-        flex-direction: row;
-        display: inline;
-    }
-
+@media only screen and (min-width:577px) and (max-width:768px) {
     .main {
-        margin-left: 0;
-        background-color: cornflowerblue;
-        width: 680px;
-        flex-direction: column;
-    }
-
-    .blog {
-        margin-right: 400px;
-        border-radius: 10px;
-    }
-
-    .title {
-        /* width: 100%; */
-
-    }
-
-    .title .p {
-
-        border: 3px solid gray;
-
-
-        text-overflow: ellipsis;
-    }
-
-
-
-    .all-blog {
-        background-color: white;
-        flex-direction: column;
-
-    }
-
-    .layout {
-        background-color: white;
+        background-color: coral;
     }
 
     .container {
-        margin-top: 0px;
-
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .inline {
+    .display {
         display: block;
+        font-size: 300;
+        margin-left: 350px;
+        border: 20px 50px;
+        background-color: orange;
     }
-}
+
+    .all-blog {
+        background-color: white;
+        flex-direction: column;
+
+    }
+
+    /* mobile devices */
+    @media only screen and (max-width: 576px) {
+        body {
+            width: 570px;
+        }
+
+
+
+        .main {
+            margin-left: 0;
+            background-color: cornflowerblue;
+            width: 680px;
+            flex-direction: column;
+        }
+
+        .blog {
+            /* margin-right: 300px; */
+            border-radius: 10px;
+        }
+
+        .layout {
+            background-color: white;
+        }
+
+        .all-blog {
+            background-color: white;
+            flex-direction: column;
+
+        }
+
+        .title {
+            /* width: 100%; */
+
+        }
+
+        .title .p {
+
+            border: 3px solid gray;
+
+
+            text-overflow: ellipsis;
+        }
+
+
+
+        .all-blog {
+            background-color: white;
+            flex-direction: column;
+
+        }
+
+        .layout {
+            background-color: white;
+        }
+
+        .container {
+            margin-top: 0px;
+
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .inline {
+            display: block;
+        }
+    }
