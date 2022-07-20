@@ -163,6 +163,10 @@ span {
     font-weight: 400;
 }
 
+.display {
+    display: none;
+}
+
 footer {
     background: black;
 
@@ -181,10 +185,15 @@ h1 {
     display: inline;
     justify-content: space-around;
     align-items: center;
-    padding-left: 70px;
+    padding-left: 80px;
 
 
 }
+
+.icon {
+    padding-left: 550px;
+}
+
 
 /* media Quaries */
 /* -------- */
@@ -196,20 +205,28 @@ h1 {
 
     }
 
-    .all-blog {
-        flex-direction: row;
+    .layout {
+
         background-color: white;
+        flex-direction: row;
+        display: inline;
     }
 
-    .layout {
-        flex-direction: row;
+    .all-blog {
         background-color: white;
+        flex-direction: row;
+        display: inline;
+
     }
 
     .container {
         margin-top: 0px;
 
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .display {
+        display: flex;
     }
 }
 
