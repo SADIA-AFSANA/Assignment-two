@@ -10,12 +10,40 @@ body {
     background-color: black;
     color: aliceblue;
 
+    border-radius: 20px;
+
+    margin: 50px 100px;
+
 }
 
 .title {
-    width: 531px;
-    padding-top: 50px;
+    margin: 50px;
+    width: 50%;
+    padding-right: 50px;
 
+
+}
+
+.h1 {
+    font-size: 40px;
+}
+
+.p {
+    font-size: 12px;
+    line-height: 26px;
+
+}
+
+.title {
+    background-color: url(kisspng-marcelo-vieira-brazil-national-football-team-footb-brazil-5ac0e6b8ef0ed6.png);
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+.image {
+    margin: 0px;
+    border: 0px;
 }
 
 .body {
@@ -23,16 +51,65 @@ body {
 }
 
 .btn {
+    margin-top: 40px;
+    margin-right: 160px;
+}
+
+.tag {
+
     text-decoration: none;
+    background-color: orangered;
+    font-weight: 400;
+    margin-top: 100px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: aliceblue;
+    gap: 5px;
+
+}
+
+span {
+    display: block;
+}
+
+.up {
+    text-decoration: none;
+    background-color: white;
+
+    border: 20px;
+    padding: 1px solid gray;
+}
+
+.all {
+    text-decoration: none;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 4px solid gray;
+}
+
+.blog {
+    text-decoration: none;
+    background-color: orangered;
     font-weight: 400;
 
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: aliceblue;
+    gap: 5px;
 
+}
+
+.all-blog {
+    display: flex;
 }
 
 .container {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+
+
 }
 
 .blog-btn {
@@ -41,4 +118,10 @@ body {
     width: 60px;
     color: white;
     font-weight: 400;
+}
+
+footer {
+    background: black;
+    color: aliceblue;
+
 }
