@@ -2,10 +2,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-
+    width: 1200px;
 }
 
 .main {
+    width: 1000px;
     display: flex;
     background-color: black;
     color: aliceblue;
@@ -18,7 +19,7 @@ body {
 
 .title {
     margin: 50px;
-    width: 50%;
+    width: 100%;
     padding-right: 50px;
 
 
@@ -72,13 +73,15 @@ body {
 }
 
 .layout {
+    width: 150px;
     font-size: 16px;
     background: #161616;
     border-radius: 10px;
-    margin-bottom: 850px;
+
     padding: 8px;
     align-items: center;
     row-gap: 10px;
+
 
 
 }
@@ -95,7 +98,7 @@ span {
     font-weight: 400;
     font-size: 16px;
     padding: 7px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: black;
 
 
@@ -107,7 +110,7 @@ span {
     font-weight: 400;
 
     padding: 7px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: black;
 
 }
@@ -118,21 +121,28 @@ span {
     font-weight: 400;
 
     padding: 7px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: aliceblue;
 
 
 }
 
 .all-blog {
+    margin: 30px;
+
     display: flex;
+    width: 100px;
     gap: 3px;
-    margin: 30px 70px;
+
+
 
 }
 
 .container {
+    width: 900px;
+    margin: 0px;
     display: grid;
+    width: 100%;
 
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
@@ -171,6 +181,96 @@ h1 {
     display: inline;
     justify-content: space-around;
     align-items: center;
-    padding-left: 60px;
+    padding-left: 70px;
 
+
+}
+
+/* media Quaries */
+/* -------- */
+/* tablet divice */
+@media screen and (min-width: 689px) and(max-width: 992px) {
+    .main {
+
+        background-color: plum;
+
+    }
+
+    .all-blog {
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .layout {
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .container {
+        margin-top: 0px;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+    body {
+        width: 680px;
+    }
+
+    .layout {
+
+        background-color: white;
+        flex-direction: row;
+        display: inline;
+    }
+
+    .all-blog {
+        background-color: white;
+        flex-direction: row;
+        display: inline;
+    }
+
+    .main {
+        margin-left: 0;
+        background-color: cornflowerblue;
+        width: 680px;
+        flex-direction: column;
+    }
+
+    .title {
+        width: 100%;
+
+    }
+
+    .title .p {
+
+        border: 3px solid gray;
+
+
+        text-overflow: ellipsis;
+    }
+
+
+
+    .all-blog {
+        background-color: white;
+        flex-direction: column;
+
+    }
+
+    .layout {
+        background-color: white;
+    }
+
+    .container {
+        margin-top: 0px;
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .inline {
+        display: block;
+    }
 }
