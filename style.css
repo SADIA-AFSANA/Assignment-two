@@ -29,6 +29,11 @@ body {
     font-size: 40px;
 }
 
+h1:hover {
+    color: blue;
+
+}
+
 .p {
     font-size: 12px;
     line-height: 26px;
