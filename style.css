@@ -251,9 +251,9 @@ h1 {
 }
 
 
-/* media Quaries */
+/* --------------------   media Quaries     ----------------- */
 /* -------- */
-/* tablet divice */
+/* -------tablet divice --------*/
 @media only screen and (min-width:577px) and (max-width:768px) {
     .main {
         width: 770px;
@@ -288,7 +288,7 @@ h1 {
     }
 }
 
-/* mobile devices */
+/* ------------- mobile devices ---------------- */
 @media only screen and (max-width: 576px) {
     body {
         width: 570px;
